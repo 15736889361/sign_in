@@ -31,6 +31,7 @@ public class MainActivity extends BaseActivity {
 	private String data;
 	//获取数据库helper
 	MySQLiteOpenHelper mysqlitehelper=new MySQLiteOpenHelper(this, "Signin", null, 1);
+	
 
 
 	@Override
@@ -88,8 +89,6 @@ public class MainActivity extends BaseActivity {
 				}finally{
 					cursor.close();
 				}
-
-
 			}
 		});
 		/*
@@ -106,6 +105,7 @@ public class MainActivity extends BaseActivity {
 			}
 		});
 	}
+
 	/*
 	 * 更新显示签到时间的两个TextView
 	 */
